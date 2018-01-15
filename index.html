@@ -7,7 +7,7 @@
     <title>Title</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -16,23 +16,52 @@
 <body>
 <div class="wrapper">
 
-    <header>
+    <header class="container">
         <h1>The Code Review</h1>
     </header>
 
     <aside class="notice container">
-        <h2>Signup for our newsletter</h2>
+        <h1>Signup for our newsletter</h1>
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </aside>
 
+    <hr class="wide">
     <hr>
 
-    <div class="contact">
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" name="full-name">
 
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email">
+
+            <label for="telephone">Phone Number</label>
+            <input id="telephone" type="tel" name="telephone">
+
+            <label for="street">Street Address</label>
+            <input id="street" type="text" name="street">
+
+            <label for="city">City</label>
+            <input id="city" type="text" name="city">
+
+            <label for="state">State</label>
+            <input id="state" type="text" name="state">
+
+            <label for="zip">Zip Code</label>
+            <input id="zip" type="number" name="zip">
+        </fieldset>
+
+        <fieldset>
+            <legend>Newsletter</legend>
+
+        </fieldset>
+    </form>
+    <div class="contact">
     </div>
 
     <div class="newsletter">
-
     </div>
 
     <footer>
