@@ -8,14 +8,11 @@ body {
     padding: 0;
 
     line-height: 1.6;
-    font-family: 'Comfortaa', sans-serif;
-    text-align: center;
+    font-family: 'Lora', serif;
 }
 
-h1,
-h2,
-h3 {
-    font-size: 1em;
+h1 {
+    font-size: 1.5em;
 }
 
 a {
@@ -26,48 +23,135 @@ hr {
     background-color: black;
     border: none;
     height: 1px;
-    width: 95%;
-}
-
-/*---- Layout Containers ----*/
-.wrapper{
-    margin: 0 auto;
-    width: 100%;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 90%;
-}
-
-header.container {
-    background-color: #004080;
-    padding: 10px;
-    min-width: 100%;
-}
-
-aside.notice {
-    margin: 2em;
-}
-
-/*---- Section styles ----*/
-header h1 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.7em;
-}
-
-.notice h1 {
-    font-size: 1.3em;
-    margin-bottom: 0;
-}
-
-.notice p {
-    color: grey;
-    margin: 0;
+    width: 90%;
 }
 
 hr.wide {
     border: none;
     height: 4px;
+}
+
+input,
+textarea,
+select {
+    color: #222;
+    width: 100%;
+    border: none;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 1.2em;
+    border-radius: .3em;
+    border-bottom: 3px solid rgba(0,0,0, 0.05);
+    background-color: #e8eeef;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+fieldset {
+    border-style: none;
+}
+
+/*---- Layout Containers ----*/
+.wrapper{
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.title {
+    background-color: #004080;
+    min-width: 100%;
+    display: inline-block;
+}
+
+.heading {
+    padding: 20px 2px;
+}
+
+.contact,
+.newsletter {
+    margin: 0 auto;
+}
+
+/*---- Section styles ----*/
+.title {
+    color: white;
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 1.3em;
+}
+
+.heading p {
+    font-size: .8em;
+    color: grey;
+}
+
+legend {
+    padding-top: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+label,
+input,
+textarea,
+fieldset p {
+    font-size: .8em;
+    color: dimgrey;
+    display: inline-block;
+    width: 100%;
+}
+
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+select {
+    color: dimgrey;
+}
+
+input[type="number"] {
+    width: 50%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 8%;
+    margin-right: 4px;
+}
+
+.newsletter label {
+    width: 90%;
+}
+
+button[type="submit"] {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 1.2em;
+    border-radius: .3em;
+    border-bottom: 3px solid rgba(0,0,0, 0.05);
+    background-color: teal;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+footer p {
+    font-size: 0.8em;
+    font-style: italic;
+    color: darkgrey;
+    text-align: center;
+    padding-bottom: 10em;
 }

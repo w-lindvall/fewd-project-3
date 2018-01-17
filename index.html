@@ -4,10 +4,10 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Register</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -16,26 +16,30 @@
 <body>
 <div class="wrapper">
 
-    <header class="container">
-        <h1>The Code Review</h1>
-    </header>
+    <header>
 
-    <aside class="notice container">
-        <h1>Signup for our newsletter</h1>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
-    </aside>
+        <div class="title">
+            <h1>The Code Review</h1>
+        </div>
+
+        <div class="heading container">
+            <h1>Signup for our newsletter</h1>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+
+    </header>
 
     <hr class="wide">
     <hr>
 
-    <form>
-        <fieldset>
+    <form action="index.html" method="post">
+        <fieldset class="contact container">
             <legend>Contact Information</legend>
             <label for="full-name">Full Name</label>
-            <input id="full-name" type="text" name="full-name">
+            <input id="full-name" type="text" name="full-name" placeholder="Required">
 
             <label for="email">Email Address</label>
-            <input id="email" type="email" name="email">
+            <input id="email" type="email" name="email" placeholder="Required">
 
             <label for="telephone">Phone Number</label>
             <input id="telephone" type="tel" name="telephone">
@@ -47,25 +51,34 @@
             <input id="city" type="text" name="city">
 
             <label for="state">State</label>
-            <input id="state" type="text" name="state">
+            <select id="state" name="state"><option value="">Choose state</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Guam">Guam</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Northern Marianas Islands">Northern Marianas Islands</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Puerto Rico">Puerto Rico</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Virgin Islands">Virgin Islands</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option></select>
 
             <label for="zip">Zip Code</label>
             <input id="zip" type="number" name="zip">
         </fieldset>
 
-        <fieldset>
-            <legend>Newsletter</legend>
+        <hr class="wide">
 
+        <fieldset class="newsletter container">
+            <legend>Newsletter</legend>
+            <p>Select the newsletters you would like to receive</p>
+            <input type="checkbox" id="html-news" value="html-news" name="news"><label for="html-news">HTML News</label>
+            <input type="checkbox" id="css-news" value="css-news" name="news"><label for="css-news">CSS News</label>
+            <input type="checkbox" id="javascript-news" value="javascript-news" name="news"><label for="javascript-news">Javascript News</label>
+
+            <p>Newsletter format</p>
+            <input type="radio" id="html" value="html" name="format"><label for="html">HTML</label>
+            <input type="radio" id="plain-text" value="plain-text" name="format"><label for="plain-text">Plain text</label>
+
+            <label for="other-suggestions">Other topics you'd like to hear about</label>
+            <textarea id="other-suggestions" name="other-suggestions"></textarea>
+
+            <button type="submit">Sign Up</button>
         </fieldset>
     </form>
-    <div class="contact">
-    </div>
-
-    <div class="newsletter">
-    </div>
 
     <footer>
-
+        <p>Copyright the Code Review</p>
     </footer>
 
 </div>
