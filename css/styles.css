@@ -116,6 +116,12 @@ input::placeholder {
     padding-right: 5px;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: rgba(0,80,80, 0.18);
+}
+
 select {
     color: dimgrey;
 }
@@ -154,4 +160,35 @@ footer p {
     color: darkgrey;
     text-align: center;
     padding-bottom: 10em;
+}
+
+/*---- Desktop query ----*/
+
+@media (min-width: 768px) {
+
+    .container,
+    hr {
+        max-width: 60%;
+    }
+
+    .title h1 {
+        font-size: 1em;
+    }
+
+    .contact label {
+        width: 30%;
+        float: left;
+        padding-top: 15px;
+    }
+
+    .contact input,
+    .contact select {
+        width: 70%;
+        float: left;
+    }
+
+    .contact input[type="number"] {
+        width: 35%;
+    }
+
 }
